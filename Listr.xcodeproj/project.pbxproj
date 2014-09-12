@@ -11,6 +11,7 @@
 		66219C6019C24A7D007CF0BE /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66219C5F19C24A7D007CF0BE /* ListViewController.m */; };
 		66219C6319C3460E007CF0BE /* AddNewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66219C6219C3460E007CF0BE /* AddNewListViewController.m */; };
 		66219C6619C376A7007CF0BE /* ListItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66219C6519C376A7007CF0BE /* ListItemsViewController.m */; };
+		662B233A19C385AF007BD8C8 /* ListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B233919C385AF007BD8C8 /* ListItemTableViewCell.m */; };
 		6673313519C21CB2002F3519 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6673313419C21CB2002F3519 /* Foundation.framework */; };
 		6673313719C21CB2002F3519 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6673313619C21CB2002F3519 /* CoreGraphics.framework */; };
 		6673313919C21CB2002F3519 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6673313819C21CB2002F3519 /* UIKit.framework */; };
@@ -60,6 +61,8 @@
 		66219C6219C3460E007CF0BE /* AddNewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewListViewController.m; sourceTree = "<group>"; };
 		66219C6419C376A7007CF0BE /* ListItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemsViewController.h; sourceTree = "<group>"; };
 		66219C6519C376A7007CF0BE /* ListItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemsViewController.m; sourceTree = "<group>"; };
+		662B233819C385AF007BD8C8 /* ListItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemTableViewCell.h; sourceTree = "<group>"; };
+		662B233919C385AF007BD8C8 /* ListItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemTableViewCell.m; sourceTree = "<group>"; };
 		6673313119C21CB2002F3519 /* Listr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6673313419C21CB2002F3519 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6673313619C21CB2002F3519 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +184,8 @@
 				6673314319C21CB2002F3519 /* AppDelegate.h */,
 				6673314419C21CB2002F3519 /* AppDelegate.m */,
 				6673314619C21CB2002F3519 /* Main.storyboard */,
+				662B233819C385AF007BD8C8 /* ListItemTableViewCell.h */,
+				662B233919C385AF007BD8C8 /* ListItemTableViewCell.m */,
 				66219C6419C376A7007CF0BE /* ListItemsViewController.h */,
 				66219C6519C376A7007CF0BE /* ListItemsViewController.m */,
 				66219C6119C3460E007CF0BE /* AddNewListViewController.h */,
@@ -336,6 +341,7 @@
 			files = (
 				6673318419C21EFB002F3519 /* LogInViewController.m in Sources */,
 				66219C5D19C231CB007CF0BE /* GravatarHelper.m in Sources */,
+				662B233A19C385AF007BD8C8 /* ListItemTableViewCell.m in Sources */,
 				66219C6019C24A7D007CF0BE /* ListViewController.m in Sources */,
 				66219C6319C3460E007CF0BE /* AddNewListViewController.m in Sources */,
 				6673318719C22F33002F3519 /* SignUpViewController.m in Sources */,

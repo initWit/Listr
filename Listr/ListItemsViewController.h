@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ListItemsViewController : UIViewController
-@property NSString *passedInListName;
+@property PFObject *passedInListObject;
 @end

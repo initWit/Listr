@@ -90,8 +90,7 @@
     if ([segue.identifier isEqualToString:@"showListItemsSegue"])
     {
         ListItemsViewController *listItemsVC = segue.destinationViewController;
-        PFObject *selectedListObject = [self.listsArray objectAtIndex:self.listTableView.indexPathForSelectedRow.row];
-        listItemsVC.passedInListName = selectedListObject[@"listName"];
+        listItemsVC.passedInListObject = [self.listsArray objectAtIndex:self.listTableView.indexPathForSelectedRow.row];
     }
 }
 

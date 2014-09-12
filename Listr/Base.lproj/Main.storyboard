@@ -291,13 +291,33 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listItemCell" rowHeight="70" id="NHJ-EH-pYi">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listItemCell" rowHeight="70" id="NHJ-EH-pYi" customClass="ListItemTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHJ-EH-pYi" id="fwI-iC-3Uj">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5L-wT-aqk">
+                                                    <rect key="frame" x="57" y="0.0" width="215" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="fJc-BC-kon" id="eoM-H4-Ec6"/>
+                                                    </connections>
+                                                </textField>
+                                                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-ar-0dv">
+                                                    <rect key="frame" x="20" y="24" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.75436463649999996" blue="0.3803898604" alpha="1" colorSpace="calibratedRGB"/>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkMarkToggleButton" destination="QhD-ar-0dv" id="j8I-Ed-0hg"/>
+                                            <outlet property="listItemDescriptionTextField" destination="M5L-wT-aqk" id="tR4-YK-Pi6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -307,13 +327,24 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nQN-Kf-MWv" appends="YES" id="cca-JT-NPF"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="nes-a0-J4a"/>
+                    <navigationItem key="navigationItem" id="nes-a0-J4a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Su8-XK-SBH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="listItemsTableView" destination="rw8-WG-af2" id="jTY-2D-r3R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOZ-R5-tJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nQN-Kf-MWv">
+                    <connections>
+                        <action selector="listItemTableViewWasTapped:" destination="fJc-BC-kon" id="nfD-Sm-4y9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1779" y="99"/>
         </scene>
